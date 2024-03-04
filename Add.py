@@ -1,4 +1,5 @@
 import sqlite3
+import random
 
 conn= sqlite3.connect('QuarterA2.db')
 curse = conn.cursor()
@@ -12,7 +13,7 @@ for row in rows:
     questions.append((row[0], row[1]))
 
 # Select 5 random questions for the quiz
-selected_questions = (questions, 10)
+selected_questions = random.sample(questions, 10)
 
 
 score = 0
