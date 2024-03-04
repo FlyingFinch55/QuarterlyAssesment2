@@ -20,9 +20,11 @@ for TheQuestion, CorrAnswer in selected_questions:
     print(TheQuestion)
     userAns = input("Your Answer: ")
     if userAns.lower() == CorrAnswer.lower():
-        print("Correct!")
+        print('\033[38;2;0;225;0m'+"Correct!")
+        print('\033[38;2;225;225;225m')
         score = score + 1
     if userAns.lower() != CorrAnswer.lower():
-        print("Wrong. The correct answer is " + CorrAnswer)
+        print('\033[38;2;225;0;0m'+"Wrong. The correct answer is " + CorrAnswer)
+        print('\033[38;2;225;225;225m')
 
 print ("Quiz End. Your score is " + str(score) + "/5")
