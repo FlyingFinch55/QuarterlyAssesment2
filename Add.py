@@ -4,16 +4,68 @@ import random
 conn= sqlite3.connect('QuarterA2.db')
 curse = conn.cursor()
 
-rows = curse.fetchall()
+print("Pick a topic for the quiz bowl.(Type in a number)")
+catagory = input(" 1.Accoutning 2.Databases 3.Assebly Programing 4.Python Programming 5. Computer Hardware")
 
-questions = []
+if catagory == "1":
+    curse.execute("SELECT * FROM ACCT")
+    rows = curse.fetchall()
+    questions = []
+    for row in rows:
+        questions.append((row[0], row[1]))
+
+    selected_questions = random.sample(questions, 10)
+
+if catagory == "2":
+    curse.execute("SELECT * FROM Database")
+    rows = curse.fetchall()
+    questions = []
+    for row in rows:
+        questions.append((row[0], row[1]))
+
+    selected_questions = random.sample(questions, 10)
+
+if catagory == "3":
+    curse.execute("SELECT * FROM AssablyProg")
+    rows = curse.fetchall()
+    questions = []
+    for row in rows:
+        questions.append((row[0], row[1]))
+
+    selected_questions = random.sample(questions, 10)
+
+if catagory == "4":
+    curse.execute("SELECT * FROM PythonProg")
+    rows = curse.fetchall()
+    questions = []
+    for row in rows:
+        questions.append((row[0], row[1]))
+
+    selected_questions = random.sample(questions, 10)
+
+
+if catagory == "5":
+    curse.execute("SELECT * FROM ComputerHardWear")
+    rows = curse.fetchall()
+    questions = []
+    for row in rows:
+        questions.append((row[0], row[1]))
+
+    selected_questions = random.sample(questions, 10)
+
+
+
+
+#rows = curse.fetchall()
+
+#questions = []
 
 #filling in the question array with questions and answers gotton from the fetch all
-for row in rows:
-    questions.append((row[0], row[1]))
+#for row in rows:
+#    questions.append((row[0], row[1]))
 
 # Select 5 random questions for the quiz
-selected_questions = random.sample(questions, 10)
+#selected_questions = random.sample(questions, 10)
 
 
 score = 0
