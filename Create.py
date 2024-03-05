@@ -9,7 +9,8 @@ curse = conn.cursor()
 curse.execute('''CREATE TABLE IF NOT EXISTS ACCT
               (question TEXT, answer TEXT)''')
 
-curse.execute('''INSERT INTO ACCT VALUES
+curse.execute('''
+              INSERT INTO ACCT VALUES
               ('What does Liabilty + Equaty=', 'Assets' )
               ('What is the Net Income equation?', 'Revenue - Expenses')
               ('Does Gross Profit= Revenue - Cost of Goods Sold? y/n, 'y')
