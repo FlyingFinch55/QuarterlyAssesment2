@@ -78,8 +78,14 @@ curse.execute('''INSERT INTO PythonProg VALUES
 curse.execute('''CREATE TABLE IF NOT EXISTS ComputerHardWear
               question TEXT, answer TEXT''')
 curse.execute('''INSERT INTO ComputerHardWear VALUES 
-              '
-              
-              
-              
+              'What does OS stand for?','Operating system'
+              'What does CPU stand for?','Central proccessing unit'
+              'What does RAM stand for?','Random Access Memory'
+              'Is a keyboard an input or output device?','input'
+              'Is a speaker an input or output device?','output'
+              'True or False, Windows is an OS.','True'
+              'True or False, Bing is an OS.','False'
+              'What is the name of Apple's desktop OS?','Mac'
+              'What does SaaS stand for?','Softwear as a Service'
+              'What does Paas stand for?','Platform as a Service'
               ''')
