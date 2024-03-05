@@ -48,6 +48,18 @@ curse.execute('''CREATE TABLE IF NOT EXISTS AssablyProg
 #Table 4 labeled PythonProg
 curse.execute('''CREATE TABLE IF NOT EXISTS PythonProg
               question TEXT, answer TEXT''')
+curse.execute('''INSERT INTO PythonProg VALUES
+              'What is the exstention for a python file?(Do not include the dot)',' py'
+              'What is the exstention for a database file?(Do not include the dot)','db'
+              'What is the varable type for strings?','str'
+              'What is the varable type for integers?','int'
+              'What is the varable type for real numbers?','float'
+              'What is the varable type for booleans?','bool'
+              'What type of varble does print("55") print?','string'
+              'What type of varble does print(100) print?','int'
+              'What symbol is used to comment a line?','#'
+              'What does print(5+5) print?','10'
+              ''')
 
 
 #Table 5 labled ComputerHardWear
