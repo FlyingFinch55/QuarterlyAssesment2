@@ -20,3 +20,19 @@ print()
 curse.execute("SELECT question FROM ACCT WHERE id = 1 ")
 print(curse.fetchall())
 print()
+
+curse.execute("SELECT * FROM Database")
+print(curse.fetchall())
+print()
+
+curse.execute("SELECT * FROM AssablyProg")
+print(curse.fetchall())
+print()
+
+curse.execute("SELECT * FROM PythonProg")
+print(curse.fetchall())
+print()
+
+curse.execute("SELECT * FROM ComputerHardWear")
+print(curse.fetchall())
+print()
