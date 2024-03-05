@@ -42,6 +42,18 @@ curse.execute(''' INSERT INTO Database VALUES
 #Table 3 labeld AssablyProg
 curse.execute('''CREATE TABLE IF NOT EXISTS AssablyProg
               question TEXT, answer TEXT''')
+curse.execute('''INSERT INTO AssablyProg VALUES
+              'What does LDR stand for?','Load'
+              'What does STR stand for?'.'Store'
+              'What does MOV stand for?','Move'
+              'What size is DCD?','word'
+              'What size is DCW?','half word'
+              'What size is DCB?','byte'
+              'True or False ENDP ends the program.','True'
+              'True or False, Array1 DCD 0, 0, 0, 0 makes an array of words all values 0.','True'
+              'What does 0011 + 0010 equal?','0101'
+              'What does 0100 + 0011 equal?','0111'
+              ''')
 
 
 
