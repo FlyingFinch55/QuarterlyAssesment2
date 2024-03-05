@@ -70,11 +70,16 @@ curse.execute('''INSERT INTO PythonProg VALUES
               'What type of varble does print("55") print?','string'
               'What type of varble does print(100) print?','int'
               'What symbol is used to comment a line?','#'
-              'What does print(5+5) print?','10'
+              'What does print("5"+"5") print?','55'
               ''')
 
 
 #Table 5 labled ComputerHardWear
 curse.execute('''CREATE TABLE IF NOT EXISTS ComputerHardWear
               question TEXT, answer TEXT''')
-
+curse.execute('''INSERT INTO ComputerHardWear VALUES 
+              '
+              
+              
+              
+              ''')
