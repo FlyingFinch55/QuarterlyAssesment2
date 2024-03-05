@@ -1,5 +1,5 @@
 import sqlite3
-import random
+
 
 
 conn= sqlite3.connect('QuarterA2.db')
@@ -24,6 +24,18 @@ curse.execute(''' INSERT INTO ACCT VALUES
 #Table 2 labled Databaase
 curse.execute('''CREATE TABLE IF NOT EXISTS Database
               question TEXT, answer TEXT''')
+curse.execute(''' INSERT INTO Database VALUES
+              'Name the key that is the Primary Key of another entite.', 'Foreign Key'
+              'Name the key that is made of more than one attrabute.', 'Compound Key'
+              'True or False, the Primary Key is not a unique attrabute.','False' 
+              'True or False, there are 3 main types of anomalies.','True'
+              'Relationships are made using what?','Foreign Key'
+              'What color on the stop light method are 1 to 1 relationships?','Yellow'
+              'What color on the stop light mehtod are 1 to many relationships?','Green'
+              'What color on the stop light method are many to many relationships?','Red'
+              'What entite is used t clear up many to many relationships?',' Intersection Entities'
+              'How many enitites are in a binary modle?(Number value)','2'
+              ''')
 
 
 
@@ -42,5 +54,3 @@ curse.execute('''CREATE TABLE IF NOT EXISTS PythonProg
 curse.execute('''CREATE TABLE IF NOT EXISTS ComputerHardWear
               question TEXT, answer TEXT''')
 
-# make a question array to store questions and answers as normal strings
-#questions = []
