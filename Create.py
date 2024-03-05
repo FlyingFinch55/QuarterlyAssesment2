@@ -9,7 +9,8 @@ curse = conn.cursor()
 curse.execute('''CREATE TABLE IF NOT EXISTS ACCT
               (question TEXT, answer TEXT)''')
 
-curse.execute(''' INSERT INTO ACCT VALUES
+curse.execute(''' 
+              INSERT INTO ACCT VALUES
               ('What does Liabilty + Equaty=', 'Assets' )
               ('What is the Net Income equation?', 'Revenue - Expenses')
               ('Does Gross Profit= Revenue - Cost of Goods Sold? y/n, 'y')
@@ -25,7 +26,8 @@ curse.execute(''' INSERT INTO ACCT VALUES
 #Table 2 labled Databaase
 curse.execute('''CREATE TABLE IF NOT EXISTS Database
               (question TEXT, answer TEXT)''')
-curse.execute(''' INSERT INTO Database VALUES
+curse.execute(''' 
+              INSERT INTO Database VALUES
               ('Name the key that is the Primary Key of another entite.', 'Foreign Key')
               ('Name the key that is made of more than one attrabute.', 'Compound Key')
               ('True or False, the Primary Key is not a unique attrabute.','False' )
@@ -43,7 +45,8 @@ curse.execute(''' INSERT INTO Database VALUES
 #Table 3 labeld AssablyProg
 curse.execute('''CREATE TABLE IF NOT EXISTS AssablyProg
               (question TEXT, answer TEXT)''')
-curse.execute('''INSERT INTO AssablyProg VALUES
+curse.execute('''
+              INSERT INTO AssablyProg VALUES
               ('What does LDR stand for?','Load')
               ('What does STR stand for?'.'Store')
               ('What does MOV stand for?','Move')
@@ -61,7 +64,8 @@ curse.execute('''INSERT INTO AssablyProg VALUES
 #Table 4 labeled PythonProg
 curse.execute('''CREATE TABLE IF NOT EXISTS PythonProg
               (question TEXT, answer TEXT)''')
-curse.execute('''INSERT INTO PythonProg VALUES
+curse.execute('''
+              INSERT INTO PythonProg VALUES
               ('What is the exstention for a python file?(Do not include the dot)',' py')
               ('What is the exstention for a database file?(Do not include the dot)','db')
               ('What is the varable type for strings?','str')
@@ -78,7 +82,8 @@ curse.execute('''INSERT INTO PythonProg VALUES
 #Table 5 labled ComputerHardWear
 curse.execute('''CREATE TABLE IF NOT EXISTS ComputerHardWear
               (question TEXT, answer TEXT)''')
-curse.execute('''INSERT INTO ComputerHardWear VALUES 
+curse.execute('''
+              INSERT INTO ComputerHardWear VALUES 
               ('What does OS stand for?','Operating system')
               ('What does CPU stand for?','Central proccessing unit')
               ('What does RAM stand for?','Random Access Memory')
