@@ -14,7 +14,7 @@ if catagory == "1":
     for row in rows:
         questions.append((row[0], row[1]))
 
-    selected_questions = random.sample(questions, 10)
+    selected_questions = random.sample(questions, 5)
 
 if catagory == "2":
     curse.execute("SELECT * FROM Database")
@@ -23,7 +23,7 @@ if catagory == "2":
     for row in rows:
         questions.append((row[0], row[1]))
 
-    selected_questions = random.sample(questions, 10)
+    selected_questions = random.sample(questions, 5)
 
 if catagory == "3":
     curse.execute("SELECT * FROM AssablyProg")
@@ -32,7 +32,7 @@ if catagory == "3":
     for row in rows:
         questions.append((row[0], row[1]))
 
-    selected_questions = random.sample(questions, 10)
+    selected_questions = random.sample(questions, 5)
 
 if catagory == "4":
     curse.execute("SELECT * FROM PythonProg")
@@ -41,7 +41,7 @@ if catagory == "4":
     for row in rows:
         questions.append((row[0], row[1]))
 
-    selected_questions = random.sample(questions, 10)
+    selected_questions = random.sample(questions, 5)
 
 
 if catagory == "5":
@@ -51,7 +51,7 @@ if catagory == "5":
     for row in rows:
         questions.append((row[0], row[1]))
 
-    selected_questions = random.sample(questions, 10)
+    selected_questions = random.sample(questions, 5)
 
 
 
