@@ -17,9 +17,9 @@ curse.execute("SELECT * FROM ACCT")
 print(curse.fetchall())
 print()
 
-curse.execute("SELECT question FROM ACCT WHERE id = 1 ")
-print(curse.fetchall())
-print()
+#curse.execute("SELECT question FROM ACCT WHERE id = 1 ")
+#print(curse.fetchall())
+#print()
 
 curse.execute("SELECT * FROM Database")
 print(curse.fetchall())
