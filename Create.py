@@ -90,3 +90,15 @@ curse.execute('''CREATE TABLE IF NOT EXISTS PythonProg
 curse.execute('''CREATE TABLE IF NOT EXISTS ComputerHardWear
               (question TEXT, answer TEXT)''')
 
+
+#1('What does OS stand for?','Operating system')
+#2('What does CPU stand for?','Central processing unit')
+#3('What does RAM stand for?','Random Access Memory')
+#4('Is a keyboard an input or output device?','input')
+#5('Is a speaker an input or output device?','output')
+#6('True or False, Windows is an OS.','True')
+#7('True or False, Bing is an OS.','False')
+#8('What does SaaS stand for?','Software as a Service')
+#9('What does Paas stand for?','Platform as a Service')
+#10('What does SSD stand for?','Soild State Drive')
+#conn.commit()
