@@ -10,7 +10,8 @@ curse = conn.cursor()
 #curse.execute('''INSERT INTO tableName VALUES
 #              ('Question?','Answer')
 #              ''')
-
+#Exabple of how to delete a question
+#curse.execute(''' DELETE FROM ACCT WHERE question = 'What does FIFO mean?' ''')
 
 
 #Table 1 labled ACCT
@@ -28,7 +29,7 @@ curse.execute('''CREATE TABLE IF NOT EXISTS ACCT
 #7('What does COGS stand for?', 'Cost of Goods Sold')
 #8('Is cash an Asset or a Liability?', 'Asset')
 #9('What does LIFO mean?', 'Last in First out')
-#10('What does FIFO mean?', 'First in Last out')
+#10('What does FIFO mean?', 'First in First out')
 #conn.commit()
 
 #Table 2 labled Databaase
