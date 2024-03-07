@@ -71,6 +71,21 @@ curse.execute('''CREATE TABLE IF NOT EXISTS PythonProg
               (question TEXT, answer TEXT)''')
 
 
+#1('What is the extension for a Python file?(Do not include the dot)',' py')
+#2('What is the extension for a database file?(Do not include the dot)','db')
+#3('What is the variable type for strings?','str')
+#4('What is the variable type for integers?','int')
+#5('What is the variable type for real numbers?','float')
+#6('What is the variable type for booleans?','bool')
+#7('What type of variable does print("55") print?','string')
+#8('What type of variable does print(100) print?','int')
+#9('What symbol is used to comment a line?','#')
+#10('What does print("5"+"5") print?','55')
+#conn.commit()
+
+
+
+
 #Table 5 labled ComputerHardWear
 curse.execute('''CREATE TABLE IF NOT EXISTS ComputerHardWear
               (question TEXT, answer TEXT)''')
