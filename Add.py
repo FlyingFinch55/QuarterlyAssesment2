@@ -5,7 +5,7 @@ conn= sqlite3.connect('QuarterA2.db')
 curse = conn.cursor()
 
 print("Pick a topic for the quiz bowl.(Type in a number)")
-catagory = input(" 1.Accoutning 2.Databases 3.Assebly Programing 4.Python Programming 5. Computer Hardware")
+catagory = input(" 1.Accoutning 2.Databases 3.Assebly Programing 4.Python Programming 5 Computer Hardware ")
 
 if catagory == "1":
     curse.execute("SELECT * FROM ACCT")
