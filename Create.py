@@ -8,7 +8,7 @@ curse = conn.cursor()
 
 #Code to add another question
 #curse.execute('''INSERT INTO tableName VALUES
-#              ('Question?','Answer")
+#              ('Question?','Answer')
 #              ''')
 
 
@@ -35,16 +35,19 @@ curse.execute('''CREATE TABLE IF NOT EXISTS ACCT
 curse.execute('''CREATE TABLE IF NOT EXISTS Database
               (question TEXT, answer TEXT)''')
 
-curse.execute('''INSERT INTO Database VALUES
-              ('Question?','Answer")
-              ''')
-
 
 #The list of the 10 questions added
-#1
-
-
-conn.commit()
+#1('Name the key that is the Primary Key of another entity.', 'Foreign Key')
+#2('Name the key that is made of more than one attribute.', 'Compound Key')
+#3('True or False, the Primary Key is not a unique attribute.','False' )
+#4('True or False, there are 3 main types of anomalies.','True')
+#5('Relationships are made using what?','Foreign Key')
+#6('What color on the stop light method are 1 to 1 relationship?','Yellow')
+#7('What color on the stop light method are 1 to many relationships?','Green')
+#8('What color on the stop light method are many to many relationships?','Red')
+#9('What entity is used to clear up many to many relationships?',' Intersection Entities')
+#10('How many entities are in a binary model?(Number value)','2')
+#conn.commit()
 
 #Table 3 labeld AssablyProg
 curse.execute('''CREATE TABLE IF NOT EXISTS AssablyProg
