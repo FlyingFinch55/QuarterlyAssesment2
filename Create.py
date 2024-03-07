@@ -54,7 +54,17 @@ curse.execute('''CREATE TABLE IF NOT EXISTS AssablyProg
               (question TEXT, answer TEXT)''')
 
 
-
+#1('What does LDR stand for?','Load')
+#2('What does STR stand for?','Store')
+#3('What does MOV stand for?','Move')
+#4('What size is DCD?','word')
+#5('What size is DCW?','half word')
+#6('What size is DCB?','byte')
+#7('True or False ENDP ends the program.','True')
+#8('True or False, Array1 DCD 0, 0, 0, 0 makes an array of words all values 0.','True')
+#9('What does 0011 + 0010 equal?','0101')
+#10('What does 0100 + 0011 equal?','0111')
+#conn.commit()
 
 #Table 4 labeled PythonProg
 curse.execute('''CREATE TABLE IF NOT EXISTS PythonProg
